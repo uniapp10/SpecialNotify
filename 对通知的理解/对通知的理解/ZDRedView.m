@@ -17,7 +17,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor redColor];
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width, 50)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width - 20, 50)];
         self.label = label;
         label.textAlignment = NSTextAlignmentCenter;
         [self addSubview:label];
@@ -28,5 +28,6 @@
 
 - (void)changeLabel{
     self.label.text = @"改变了";
+    self.label.backgroundColor = [UIColor greenColor];
 }
 @end

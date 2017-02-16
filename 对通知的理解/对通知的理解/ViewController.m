@@ -24,6 +24,11 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:redView selector:@selector(changeLabel) name:ChangeNotify object:nil];
 }
+
+- (void)changeLabel{
+    //处理通知
+}
+
 - (IBAction)btnClick {
     [[NSNotificationCenter defaultCenter] postNotificationName:ChangeNotify object:nil];
 }
